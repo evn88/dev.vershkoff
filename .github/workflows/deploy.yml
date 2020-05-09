@@ -13,4 +13,7 @@ jobs:
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.KEY }}
         port: ${{ secrets.PORT }}
-        script: whoami > test.txt
+        script: |
+          cd ~/dev/repo/dev.vershkoff.git
+          date +%Y-%m-%d_%H:%M:%S > last_deploy.log
+          git pull
