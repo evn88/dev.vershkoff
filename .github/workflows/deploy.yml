@@ -17,3 +17,5 @@ jobs:
           cd ~/dev/repo/dev.vershkoff.git
           date +%Y-%m-%d_%H:%M:%S > last_deploy.log
           git pull
+          cd ~/dev/repo/
+          ./depoloy.py
